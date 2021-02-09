@@ -1,2 +1,2 @@
-# Club-Mustang---Public
-Club Mustang Bootstrap project but made public!
+# Club-Mustang
+Practice with HTML, JS, CSS, and Bootstrap (mostly Bootstrap).
