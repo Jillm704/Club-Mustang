@@ -13,7 +13,8 @@ body {
 }
 
 .nav-item-container {
-    padding: 0 2rem;
+    max-width: 1200px;
+    padding: 0 5rem;
 }
 
 .dropdown-item {
@@ -94,6 +95,7 @@ h2.section-title {
     color: #fff;
     opacity: 1;
     transition: opacity 0.5s ease;
+    cursor: pointer;
 }
 
 .hidden {
@@ -114,6 +116,10 @@ h2.section-title {
     margin: 1.5rem 0;
     border: 1px solid #2a9af5;
     border-radius: 0;
+}
+
+.submit-signup:active {
+    box-shadow: 0 0 3px 1px #ff000079;
 }
 
 .submit-signup:hover {
@@ -168,6 +174,7 @@ h2.section-title {
     color: rgba(255, 255, 255, 0.658);
     font-size: 0.75rem;
     padding-right: 2rem;
+    text-align: center;
 }
 
 .navbar-text.social i {
@@ -188,13 +195,25 @@ h2.section-title {
 /* Media Queries ----------------------------- */
 @media only screen and (max-width: 375px) {
     .bi {
-        width: 1.3rem;
-        height: 1.3rem;
+        width: 1.2rem;
+        height: 1.2rem;
     }
     .navbar-brand {
-      font-size: 1rem;
+      font-size: 0.85rem;
     }
   }
+
+@media only screen and (max-width: 700px) {
+    .nav-item-container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .navbar-brand {
+        font-size: 1.75rem;
+    }
+}
 
 @media only screen and (max-width: 1100px) {
     a.carousel-control-next,
@@ -231,4 +250,9 @@ h2.section-title {
     }
 }
 
-
+@media only screen and (max-width: 345px) {
+    .copyright {
+        font-size: 0.6rem;
+        padding-right: 0;
+    }
+}
