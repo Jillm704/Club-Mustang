@@ -1,2 +1,2 @@
 # Club-Mustang
-Practice with HTML, JS, CSS, and Bootstrap (mostly Bootstrap).
+Fully responsive practice website using mostly Bootstrap, but also some custom CSS and JavaScript.
