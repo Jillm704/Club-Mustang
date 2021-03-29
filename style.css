@@ -1,0 +1,258 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Navbar ------------------------ */
+.logo, .bi {
+    color: #2a9af5;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #2a9af5;
+}
+
+.nav-item-container {
+    max-width: 1200px;
+    padding: 0 5rem;
+}
+
+.dropdown-item {
+    color: #2a9af5;
+    transition: all 0.2s;
+}
+
+.dropdown-item:hover {
+    background: #f7fcff;
+    color: #333;
+}
+
+/* Carousel--------------------------- */
+.carousel-container {
+    max-width: 2300px;
+    margin: auto;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    padding-bottom: 0.5rem;
+    max-width: 1250px;
+    margin: auto;
+}
+
+a.carousel-control-prev,
+a.carousel-control-next {
+    height: 8%;
+    top: 45%;
+    width: 4%;
+    background: #00000050;
+    border-radius: 50%;
+}
+
+a.carousel-control-prev {
+    left: 5%;
+}
+
+a.carousel-control-next {
+    right: 5%;
+}
+
+/* About ----------------------------- */
+#about {
+    border: 1px solid #2a9af546;
+}
+
+.card-body p {
+    line-height: 1.7rem;
+}
+
+.btn-color {
+    background: #2a9af5;
+    color: #fff;
+    border-radius: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.btn-color:hover {
+    background: #2c91e4;
+    color: #fff;
+}
+
+/* Gallery ---------------------------------- */
+h2.section-title {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #2a9af5;
+}
+
+#gallery {
+    margin-bottom: 3rem;
+}
+
+.card-img-overlay {
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* Free Sign Up ------------------------------- */
+#signup {
+    margin-bottom: 3rem;
+}
+
+.signup {
+    margin: 2rem 0;
+}
+
+.submit-signup {
+    color: #2a9af5;
+    margin: 1.5rem 0;
+    border: 1px solid #2a9af5;
+    border-radius: 0;
+}
+
+.submit-signup:active {
+    box-shadow: 0 0 3px 1px #ff000079;
+}
+
+.submit-signup:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+/* Membership ------------------------------- */
+.coupe {
+    border: 1px solid red;
+}
+
+.mach1 {
+    border: 1px solid gold;
+}
+
+.shelby {
+    border: 1px solid green;
+}
+
+.bullet-point p{
+    margin-left: 1.7rem;
+}
+
+.card-body-coupe .fa-cog {
+    color: red;
+    float: left;
+    margin-top: 0.25rem;
+}
+
+.card-body-mach1 .fa-cogs {
+    color: gold;
+    float: left;
+    margin-top: 0.25rem;
+}
+
+.card-body-shelby .fa-tachometer-alt {
+    color: green;
+    float: left;
+    margin-top: 0.25rem;
+}
+
+.coupe-signup,
+.mach1-signup,
+.shelby-signup {
+    border-radius: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+/* Footer ------------------------------------ */
+.copyright {
+    color: rgba(255, 255, 255, 0.658);
+    font-size: 0.75rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+.navbar-text.social i {
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+.navbar-text.social a,
+.navbar-text.social a:active {
+    color: #2a9af5;
+    transition: 0.2s all;
+}
+
+.navbar-text.social a:hover {
+    color: #fff;
+}
+
+/* Media Queries ----------------------------- */
+@media only screen and (max-width: 375px) {
+    .bi {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .navbar-brand {
+      font-size: 0.85rem;
+    }
+  }
+
+@media only screen and (max-width: 700px) {
+    .nav-item-container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .navbar-brand {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    a.carousel-control-next,
+    a.carousel-control-prev {
+        background: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .card-img-overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-img-overlay p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card-body p {
+      font-size: 0.8rem;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    span.navbar-text.social i {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .copyright {
+        font-size: 0.6rem;
+        padding-right: 0;
+    }
+}
