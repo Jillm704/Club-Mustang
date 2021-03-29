@@ -2,6 +2,29 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#btnScrollToTop {
+    position: fixed;
+    z-index: 10;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    background: #2a9af5e3;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#btnScrollToTop:active,
+#btnScrollToTop:hover {
+    transform: scale(1.05);
+    background: #278bddd3;
+}
+
 /* Navbar ------------------------ */
 .logo, .bi {
     color: #2a9af5;
@@ -86,12 +109,27 @@ h2.section-title {
     border-bottom: 2px solid #2a9af5;
 }
 
-#gallery {
+.carousel-container.gallery {
+    background-color: #fbfbfb;
+    padding: 2rem 0;
     margin-bottom: 3rem;
 }
 
+#gallery {
+    padding-top: 1.5rem;
+}
+
+#gallery .card {
+    margin: 0.75rem;
+    border: 1px solid #2a9af5;
+}
+
+#gallery .card img {
+    height: 100%;
+}
+
 .card-img-overlay {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     color: #fff;
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -104,7 +142,7 @@ h2.section-title {
 
 /* Free Sign Up ------------------------------- */
 #signup {
-    margin-bottom: 3rem;
+    padding-top: 1.5rem;
 }
 
 .signup {
@@ -128,6 +166,10 @@ h2.section-title {
 }
 
 /* Membership ------------------------------- */
+#membership {
+    padding-top: 1.5rem;
+}
+
 .coupe {
     border: 1px solid red;
 }
@@ -167,13 +209,14 @@ h2.section-title {
 .shelby-signup {
     border-radius: 1.5rem;
     margin: 1.5rem 0;
+    padding: 0.5rem 1.25rem;
 }
 
 /* Footer ------------------------------------ */
 .copyright {
     color: rgba(255, 255, 255, 0.658);
     font-size: 0.75rem;
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
     text-align: center;
 }
 
@@ -225,6 +268,12 @@ h2.section-title {
 @media only screen and (max-width: 400px) {
     .btn {
       font-size: 0.8rem;
+    }
+
+    #btnScrollToTop {
+        width: 35px;
+        height: 35px;
+        font-size: 0.65rem;
     }
   }
 

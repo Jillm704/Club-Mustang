@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/81b2bf8630.js" crossorigin="anonymous"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css?_cacheOverride=1598895828326" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -12,14 +15,17 @@
     <title>Club Mustang</title>
 </head>
 <body>
+
+  <button id="btnScrollToTop"><i class="fas fa-arrow-up"></i></button>
+
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-md nav-item-container">
           <a class="navbar-brand" style="letter-spacing: 0.1rem; text-transform: uppercase; font-weight: 200;" href="#">Club <span class="logo">Mustang</span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gear-wide-connected ms-2" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 0 0-9.995 4.998 4.998 0 0 0 0 9.996z"/>
             <path fill-rule="evenodd" d="M7.375 8L4.602 4.302l.8-.6L8.25 7.5h4.748v1H8.25L5.4 12.298l-.8-.6L7.376 8z"/>
           </svg></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
@@ -69,7 +75,7 @@
 
       <!-- Carousel -->
       <div class="carousel-container">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5 pt-2" data-bs-ride="carousel">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <ol class="carousel-indicators">
                   <li data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"></li>
                   <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></li>
@@ -162,25 +168,9 @@
         </div>
       </div>
 
-
-      <!-- PRACTICE GALLERY -->
-      <div class="row align-items-center text-center">
-        <div class="col">
-          One of two columns
-        </div>
-        <div class="col">
-          One of two columns
-        </div>
-        <!-- <div class="col">
-          One of three columns
-        </div> -->
-      </div>
-
-
-    
       <!-- Gallery -->
-      <div class="carousel-container" style="max-width: 1900px;">
-        <div id="gallery">
+      <div class="carousel-container gallery">
+        <div id="gallery" class="mx-auto" style="max-width: 1700px;">
           <div class="container" style="max-width: 400px;">
             <h2 class="text-center section-title">Gallery</h2>
           </div>
@@ -201,6 +191,8 @@
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
             </div>
+          </div>
+          <div class="card-group">
             <div class="card">
               <div class="card-img-overlay hidden">
                 <h3 class="card-title">1969 Mustang Boss 429</h3>
@@ -209,8 +201,6 @@
               </div>
               <img src="https://images.hgmsites.net/hug/1969-classic-recreations-ford-mustang-boss-429_100677932_h.jpg" class="card-img-top" style="max-width: auto;" alt="...">
             </div>
-          </div>
-          <div class="card-group">
             <div class="card">
               <img src="https://image.invaluable.com/housePhotos/Oldtimer/41/656041/H21484-L186082849.jpg" class="card-img-top" style="max-width: auto;" alt="...">
               <div class="card-img-overlay hidden">
@@ -219,6 +209,8 @@
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
             </div>
+          </div>
+          <div class="card-group">
             <div class="card">
               <div class="card-img-overlay hidden">
                 <h3 class="card-title">1977 Mustang Cobra II</h3>
@@ -253,6 +245,8 @@
               </div>
               <img src="https://barrettjacksoncdn.azureedge.net/staging/carlist/items/Fullsize/Cars/224170/224170_Front_3-4_Web.jpg" class="card-img-top" style="max-width: auto;" alt="...">
             </div>
+          </div>
+          <div class="card-group">
             <div class="card">
               <div class="card-img-overlay hidden">
                 <h3 class="card-title">2003 Mustang Mach 1</h3>
@@ -261,19 +255,19 @@
               </div>
               <img src="https://0.cdn.autotraderspecialty.com/Article-502-66db50d23293dd3f9bab4b46b3d3c4b3.jpg" class="card-img-top" style="max-width: auto;" alt="...">
             </div>
-          </div>
-          <div class="card-group">
             <div class="card">
               <div class="card-img-overlay hidden">
-                <h3 class="card-title">2009 Shelby GT500</h3>
+                <h3 class="card-title">2009 Mustang Shelby GT500</h3>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
               <img src="https://i.pinimg.com/originals/ab/af/87/abaf8741ba64be80439fbc80e736de25.jpg" class="card-img-top" style="max-width: auto;" alt="...">
             </div>
+          </div>
+          <div class="card-group">
             <div class="card">
               <div class="card-img-overlay hidden">
-                <h3 class="card-title">2016 Mustang GT350R</h3>
+                <h3 class="card-title">2016 Mustang Shelby GT350R</h3>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
@@ -281,7 +275,7 @@
             </div>
             <div class="card">
               <div class="card-img-overlay hidden">
-                <h3 class="card-title">2020 Shelby GT500</h3>
+                <h3 class="card-title">2020 Mustang Shelby GT500</h3>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
@@ -381,18 +375,18 @@
         <div class="container" style="max-width: 400px;">
           <h2 class="text-center section-title">Membership</h2>
         </div>
-        <div id="about" class="row row-cols-1 row-cols-lg-3 g-4 mx-auto my-5 py-4 px-3" style="max-width: 1400px;">
+        <div id="about" class="row row-cols-1 row-cols-lg-3 g-4 mx-auto my-5 py-4 px-3" style="max-width: 1700px;">
           <div class="col">
             <div class="card coupe">
               <img src="https://i.pinimg.com/originals/a5/bb/3e/a5bb3e3176802b170554d965e5a4ea6d.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Coupe Package</h5>
+                <h3 class="card-title py-2 mb-4" style="border-bottom: 1px solid red;">Coupe Package</h3>
                 <p class="card-text">The Coupe Package is our starter-pack paid subscription service. Many users start with this package and later upgrade to our premium packages. With this package, you will :</p>
                 <div class="card-body-coupe">
                   <i class="fas fa-cog"></i><div class="bullet-point"><p>Create your profile to join the community</p></div>
                   <i class="fas fa-cog"></i><div class="bullet-point"><p>Receive an official membership pin and bumper sticker</p></div>
                   <i class="fas fa-cog"></i><div class="bullet-point"><p>Have access to our weekly newsletter and free download of all images, including our professional gallery</p></div>
-                  <h2>$19.99/Year</h2>
+                  <h1 class="display-5 py-2">$19.99/Year</h1>
                   <button class="coupe-signup shadow-none btn btn-sm btn-danger">Sign Me Up!</button>
                 </div>
               </div>
@@ -402,13 +396,13 @@
             <div class="card mach1">
               <img src="https://i.pinimg.com/originals/57/45/b2/5745b2382a98cd2b392ae2e33f7861a7.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Mach-1 Package</h5>
+                <h3 class="card-title py-2 mb-4" style="border-bottom: 1px solid gold">Mach-1 Package</h3>
                 <p class="card-text">The Mach-1 Package is the next step up from the Coupe Package, and the package of choice for many of our subscribers. The Mach-1 package will give you additional premium benefits, including :</p>
                 <div class="card-body-mach1">
                   <i class="fas fa-cogs"></i><div class="bullet-point"><p>All Coupe Package benefits automatically included</p></div>
                   <i class="fas fa-cogs"></i><div class="bullet-point"><p>Receive a yearly raffle prize from our shop items and free shipping on select items</p></div>
                   <i class="fas fa-cogs"></i><div class="bullet-point"><p>Ability to participate in Club Mustang's annual Mustang Raffle, where we choose one lucky subscriber to receive a fully-restored mustang selected by members' popular vote. You may enter numerous times for a separate fee.</p></div>
-                  <h2>$49.99/Year</h2>
+                  <h1 class="display-5 py-2">$49.99/Year</h1>
                   <button class="mach1-signup shadow-none btn btn-warning">Sign Me Up!</button>
                 </div>
               </div>
@@ -418,14 +412,14 @@
             <div class="card shelby">
               <img src="imgs/shelby.jpg" class="card-img-top shelby-img" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Shelby Package</h5>
+                <h3 class="card-title py-2 mb-4" style="border-bottom: 1px solid green">Shelby Package</h3>
                 <p class="card-text">The Shelby Package is our most premium subscription plan available to Club Mustang users. While it may be the priciest, it is also the most inclusive package and contains every possible benefit we have to offer :</p>
                 <div class="card-body-shelby">
                   <i class="fas fa-tachometer-alt"></i><div class="bullet-point"><p>All Coupe and Mach-1 Package benefits automatically included</p></div>
                   <i class="fas fa-tachometer-alt"></i><div class="bullet-point"><p>Receive a quarterly Shelby-exclusive raffle prize in addition to the yearly raffle prize, as well as free shipping on ALL of our store items</p></div>
                   <i class="fas fa-tachometer-alt"></i><div class="bullet-point"><p>Enter our annual Mustang Raffle twenty-five times at absolutely no extra cost, and at a discounted fee rate for each additional entry past twenty-five</p></div>
                   <i class="fas fa-tachometer-alt"></i><div class="bullet-point"><p>Every quarter you enter to win a free five-day trip to Ford World Headquarters in Dearborn, Michigan, where you will get a full tour and a guaranteed test-drive of the entire Ford Performance lineup. Inlcudes both modern and classic Ford creations.</p></div>
-                  <h2>$149.99/Year</h2>
+                  <h1 class="display-5 py-2">$149.99/Year</h1>
                   <button class="shelby-signup shadow-none btn btn-lg btn-success">Sign Me Up!</button>
                 </div>
               </div>

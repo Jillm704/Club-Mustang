@@ -1,5 +1,11 @@
+//Scroll-To-Top Button:
+const btnScrollTop = document.querySelector('#btnScrollToTop');
+    btnScrollTop.addEventListener("click", function() {
+        window.scrollTo(0, 0);
+    });
 
-// Toggle Button:
+
+// Toggle "Read More" Button:
 function toggleButton() {
 let x = document.querySelector('#readMore');
     if (x.textContent === "Read More") {
